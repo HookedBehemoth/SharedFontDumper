@@ -62,7 +62,7 @@ void main() {
 	int kDown, isDone = 0;
 	struct stat *sb = memalign(0x1000, sizeof *sb);
 	
-	plInitialize();	
+	plInitialize(PlServiceType_User);	
 	text_init();
 
 	if (stat(DIRNAME, sb))
